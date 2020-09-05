@@ -10,6 +10,7 @@ namespace MYSQL
         {
             Connections con = new Connections();
             //Console.WriteLine(con.Open());
+            con.Insert();
             con.Select();
         }
     }

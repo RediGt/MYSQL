@@ -55,6 +55,26 @@ namespace MYSQL
                     Console.WriteLine(job.jobName + "," + job.jobDescr);
                 }
             }
+            else
+            {
+                Console.WriteLine("Cannot be opened");
+            }
+        }
+
+        public void Insert()
+        {
+            string query = "INSERT INTO jobs (jobName, jobDescription) VALUES ('Electrician', 'Makes wires')";
+            if (this.Open() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+      
+                this.Close();                
+            }
+            else
+            {
+                Console.WriteLine("Cannot be opened");
+            }
         }
 
         public bool Open()
