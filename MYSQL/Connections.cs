@@ -20,7 +20,7 @@ namespace MYSQL
         private void Init()
         {
             server = "localhost";
-            database = "office";//"petshop";
+            database = "office";//"petshop"; 
             uid = "root";
             password = "***";
             string connectionString;
