@@ -22,7 +22,7 @@ namespace MYSQL
             server = "localhost";
             database = "office";//"petshop";
             uid = "root";
-            password = "Mazda636";
+            password = "***";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
                 database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
